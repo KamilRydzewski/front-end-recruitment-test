@@ -70,12 +70,6 @@
     font-weight: 600;
     text-transform: uppercase;
     position: relative;
-    // &::after {
-    //   position: absolute;
-    //   content: attr(data-number);
-    //   color: #dbdbdb;
-    //   left: -20px;
-    // }
     &::before {
       position: absolute;
       color: #ffffff;
