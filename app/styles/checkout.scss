@@ -32,6 +32,10 @@
         color: #9b9b9b;
         font-size: 16px;
       }
+
+      &.error {
+        background: #e6aaaa;
+      }
     }
     &__select {
       padding: 24px 10px 8px;
@@ -95,6 +99,7 @@
   padding: 5px;
   margin-top: 40px;
   border-radius: 3px;
+  box-shadow: 0 2px 1px #dbdbdb;
   &__container {
     border: 1px dashed #dcdcdc;
     border-radius: 3px;
@@ -163,6 +168,9 @@
       display: block;
     }
   }
+  &.error {
+    animation: error 3s infinite linear;
+  }
 }
 .bg-price {
   display: inline-block;
@@ -194,5 +202,22 @@
 
   #example-image {
     display: none;
+  }
+}
+@keyframes error {
+  0% {
+    background: #6ad400;
+  }
+  25% {
+    background: #dc5454;
+  }
+  50% {
+    background: #6ad400;
+  }
+  75% {
+    background: #dc5454;
+  }
+  100% {
+    background: #6ad400;
   }
 }
